@@ -1,0 +1,33 @@
+.topHeader{
+  height: 8rem;
+  background-color: #2d6cb1;
+  color: white;
+  font-size: 3em;
+  font-family: sans-serif;
+  padding-top: 2%;
+}
+
+.logoUmich{
+  height:100%;
+  width: auto;
+}
+
+.avatarImg{
+  height: 60px;
+  width: 60px;
+}
+
+.doctorSpec{
+  font-size: 0.8em;
+  margin-top:-10px;
+  position: relative;
+  top:-5px;
+}
+.doctorRating{
+  position: relative;
+  top:-5px;
+}
+
+.docProfile.doctorName, .docProfile.doctorRating, .docProfile.doctorSpec{
+  display: block;
+}
