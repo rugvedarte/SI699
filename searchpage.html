@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Search Results</title>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -11,28 +11,39 @@
 
 </head>
 <body>
-  <div class="container-fluid topHeader">
+  <div class="container-fluid topHeader p-2 font-weight-light">
+    <a href="dashboard.html" class="icon-links">
     <img src="umich-logo.png" class="logoUmich" alt="">
-    Universtiy Health Services
-
+    </a>
+    University Health Services
   </div>
-  <nav class="navbar navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
+
+  <nav class=" navbar navbar-light bg-light">
+    <div class="myNavbar">
+
+    </div>
+    <a class="navbar-brand" href="dashboard.html"></a>
   </nav>
 
   <div class="container">
     <!-- row 1  searchbar-->
     <div class="row mt-3">
+      <div class="col-lg-12">
+        <p class="text-big underline">Scheduling Appointment</p>
+      </div>
+
+    </div>
+    <div class="row mt-2">
       <div class="col-lg-9">
         <div class="input-group mb-2">
-          <input type="text" class="form-control" value="disease name" aria-label="Recipient's username" aria-describedby="button-addon2">
+          <input type="text" class="form-control" value="Stomach Ache" aria-label="Recipient's username" aria-describedby="button-addon2">
           <div class="input-group-append">
             <button class="btn btn-primary" type="button" id="button-addon2">Search</button>
           </div>
         </div>
       </div>
       <div class="col-lg-2">
-        <button type="button" class="btn btn-danger mb-3" name="button">I need an urgent appointment</button>
+        <button type="button" class="btn btn-warning mb-3" name="button">I need an urgent appointment</button>
 
       </div>
     </div>
@@ -50,17 +61,17 @@
             <a class="dropdown-item" href="#">Female</a>
           </div>
         </div>
-        <button type="button" class="btn btn-outline-primary btn-sm mr-3">Previously Visited</button>
-        <button type="button" class="btn btn-outline-primary btn-sm">Specialist</button>
+        <button type="button" class="btn btn-outline-primary btn-sm mr-3 ">Previously Visited</button>
+        <button type="button" class="btn btn-outline-grey btn-sm "disabled>Specialist</button>
       </form>
     </div>
 
 
-<p>Showing results {Placeholder for disease}</p>
+<p>Showing results Stomach Ache...</p>
 <!-- row 3  scheduling-->
 <div class="row mt-3">
 
-  <div class="col-lg-8">
+  <div class="col-lg-7">
     <div class="row">
 
       <!-- first column -->
@@ -124,22 +135,55 @@
   </div>
 
   <!-- doctor list -->
-  <div class="col-lg-4">
-    <div class="row doctor">
-      <div class="col-lg-3 p-0">
+  <div class="col-lg-5">
+    <div class="row doctor justify-content-center">
+      <div class="col-lg-2 p-0">
         <div class="text-center">
           <img src="images/doctorAvatar.png" class="avatarImg m-1"alt="">
         </div>
       </div>
       <div class="col-lg-5">
-        <span class="doctorName">Dr. John Smith</span>
-        <span class="doctorSpec font-weight-light font-italic">Gastroenterologist</span>
-        <span class="doctorRating font-weight-bold">4.3</span>
+        <p class="doctorName">Dr. John Smith</p>
+        <p class="doctorSpec font-weight-light font-italic">Gastroenterologist</p>
+        <p class="doctorRating font-weight-bold">4.3</p>
       </div>
-      <div class="col-lg-3">
-
+      <div class="col-lg-3 p-2 scheduleLink">
+        <a class="text-small" href="doctorProfile.html">Schedule appointment</a>
       </div>
+    </div>
 
+
+    <div class="row doctor justify-content-center">
+      <div class="col-lg-2 p-0">
+        <div class="text-center">
+          <img src="images/doctorAvatar.png" class="avatarImg m-1"alt="">
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <p class="doctorName">Dr. Balasubramanium</p>
+        <p class="doctorSpec font-weight-light font-italic">Gastroenterologist</p>
+        <p class="doctorRating font-weight-bold">4.1</p>
+      </div>
+      <div class="col-lg-3 p-2 scheduleLink">
+        <a class="text-small" href="doctorProfile.html">Schedule appointment</a>
+      </div>
+    </div>
+
+
+    <div class="row doctor justify-content-center">
+      <div class="col-lg-2 p-0">
+        <div class="text-center">
+          <img src="images/doctorAvatar.png" class="avatarImg m-1"alt="">
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <p class="doctorName">Dr. Aaron Ramsey</p>
+        <p class="doctorSpec font-weight-light font-italic">Gastroenterologist</p>
+        <p class="doctorRating font-weight-bold">4.0</p>
+      </div>
+      <div class="col-lg-3 p-2 scheduleLink">
+        <a class="text-small" href="doctorProfile.html">Schedule appointment</a>
+      </div>
     </div>
   </div>
 
@@ -149,6 +193,14 @@
 
 </div>
 </div>
-
+<!-- <footer>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12 bottomFooter mt-5 p-3">
+        <p class="text-center mt-3 font-weight-light text-light text-small ">Rugved Arte & Neha Dhawan - University of Michigan</p>
+      </div>
+    </div>
+  </div>
+</footer> -->
 </body>
 </html>
